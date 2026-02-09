@@ -4,42 +4,53 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Loyalty Cache Support</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 40px auto; max-width: 760px; padding: 0 16px; line-height: 1.6; color: #111; }
-    h1 { margin-bottom: 8px; }
-    .muted { color: #666; }
-    .card { border: 1px solid #e6e6e6; border-radius: 12px; padding: 16px; margin: 16px 0; }
-    a { color: #0a66c2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script defer src="../assets/i18n.js"></script>
 </head>
-<body>
-  <h1>Loyalty Cache Support</h1>
-  <p class="muted">Last updated: February 9, 2026</p>
-
-  <div class="card">
-    <p>Need help? Email us at <a href="mailto:loyaltycache@icloud.com">loyaltycache@icloud.com</a>.</p>
-    <p>Typical response time: 1–2 business days.</p>
+<body data-page="support">
+  <div class="topbar">
+    <nav class="nav">
+      <a href="../" data-i18n="nav.home">Home</a>
+      <a href="../privacy/" data-i18n="nav.privacy">Privacy Policy</a>
+      <a href="../terms/" data-i18n="nav.terms">Terms</a>
+    </nav>
+    <div class="lang">
+      <label for="lang-select" data-i18n="common.language">Language</label>
+      <select id="lang-select"></select>
+    </div>
   </div>
 
-  <h2>Common questions</h2>
-  <h3>How do I add a card?</h3>
-  <p>Open the Scan tab, scan your barcode (or enter manually), add the store name, and save.</p>
+  <h1 data-i18n="support.title">Loyalty Cache Support</h1>
+  <p class="muted" data-i18n="support.updated">Last updated: February 9, 2026</p>
 
-  <h3>Can I use the app without internet?</h3>
-  <p>Yes. Loyalty Cache works offline.</p>
+  <div class="notice">
+    <p data-i18n="legal.noticeBody">The original English documentation is the legally valid version. Translations are provided for convenience only. We do not accept responsibility for translation inaccuracies.</p>
+    <p><a data-english-link href="?lang=en" data-i18n="legal.noticeLink">Open the original English version</a></p>
+  </div>
 
-  <h3>Is there a limit to how many cards I can save?</h3>
-  <p>No. There are no card limits.</p>
+  <div class="card">
+    <p><span data-i18n="support.help1">Need help? Email us at</span> <a href="mailto:loyaltycache@icloud.com">loyaltycache@icloud.com</a>.</p>
+    <p data-i18n="support.help2">Typical response time: 1–2 business days.</p>
+  </div>
 
-  <h3>Does the app show ads?</h3>
-  <p>No. Loyalty Cache has no ads.</p>
+  <h2 data-i18n="support.commonH">Common questions</h2>
+  <h3 data-i18n="support.q1">How do I add a card?</h3>
+  <p data-i18n="support.a1">Open the Scan tab, scan your barcode (or enter manually), add the store name, and save.</p>
 
-  <h3>How do I enable or disable iCloud backup?</h3>
-  <p>Open Settings in the app and toggle iCloud Backup.</p>
+  <h3 data-i18n="support.q2">Can I use the app without internet?</h3>
+  <p data-i18n="support.a2">Yes. Loyalty Cache works offline.</p>
 
-  <h2>Legal</h2>
-  <p><a href="/privacy/">Privacy Policy</a></p>
-  <p><a href="/terms/">Terms of Use</a></p>
+  <h3 data-i18n="support.q3">Is there a limit to how many cards I can save?</h3>
+  <p data-i18n="support.a3">No. There are no card limits.</p>
+
+  <h3 data-i18n="support.q4">Does the app show ads?</h3>
+  <p data-i18n="support.a4">No. Loyalty Cache has no ads.</p>
+
+  <h3 data-i18n="support.q5">How do I enable or disable iCloud backup?</h3>
+  <p data-i18n="support.a5">Open Settings in the app and toggle iCloud Backup.</p>
+
+  <h2 data-i18n="support.legalH">Legal</h2>
+  <p><a href="../privacy/" data-i18n="nav.privacy">Privacy Policy</a></p>
+  <p><a href="../terms/" data-i18n="nav.terms">Terms of Use</a></p>
 </body>
 </html>

@@ -4,29 +4,40 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Loyalty Cache</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 40px auto; max-width: 760px; padding: 0 16px; line-height: 1.6; color: #111; }
-    h1 { margin-bottom: 8px; }
-    .muted { color: #666; }
-    .card { border: 1px solid #e6e6e6; border-radius: 12px; padding: 16px; margin: 16px 0; }
-    a { color: #0a66c2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="./assets/i18n.js"></script>
 </head>
-<body>
-  <h1>Loyalty Cache</h1>
-  <p class="muted">All your loyalty cards, one wallet.</p>
-
-  <div class="card">
-    <p>Loyalty Cache lets you scan and store loyalty cards on your iPhone. It works offline, has no ads, and has no card limits.</p>
-    <p>Cards stay on your device by default. Optional iCloud backup can sync cards across your Apple devices.</p>
+<body data-page="index">
+  <div class="topbar">
+    <nav class="nav">
+      <a href="./support/" data-i18n="nav.support">Support</a>
+      <a href="./privacy/" data-i18n="nav.privacy">Privacy Policy</a>
+      <a href="./terms/" data-i18n="nav.terms">Terms</a>
+    </nav>
+    <div class="lang">
+      <label for="lang-select" data-i18n="common.language">Language</label>
+      <select id="lang-select"></select>
+    </div>
   </div>
 
-  <h2>Links</h2>
-  <p><a href="./support/">Support</a></p>
-  <p><a href="./privacy/">Privacy Policy</a></p>
-  <p><a href="./terms/">Terms</a></p>
+  <h1 data-i18n="index.title">Loyalty Cache</h1>
+  <p class="muted" data-i18n="index.tagline">All your loyalty cards, one wallet.</p>
 
-  <p class="muted">© 2026 Loyalty Cache</p>
+  <div class="notice">
+    <p data-i18n="legal.noticeBody">The original English documentation is the legally valid version. Translations are provided for convenience only. We do not accept responsibility for translation inaccuracies.</p>
+    <p><a data-english-link href="?lang=en" data-i18n="legal.noticeLink">Open the original English version</a></p>
+  </div>
+
+  <div class="card">
+    <p data-i18n="index.summary1">Loyalty Cache lets you scan and store loyalty cards on your iPhone.</p>
+    <p data-i18n="index.summary2">Cards stay on your device by default. Optional iCloud backup can sync cards across your Apple devices.</p>
+  </div>
+
+  <h2 data-i18n="index.links">Links</h2>
+  <p><a href="./support/" data-i18n="nav.support">Support</a></p>
+  <p><a href="./privacy/" data-i18n="nav.privacy">Privacy Policy</a></p>
+  <p><a href="./terms/" data-i18n="nav.terms">Terms</a></p>
+
+  <p class="muted" data-i18n="index.copyright">© 2026 Loyalty Cache</p>
 </body>
 </html>
